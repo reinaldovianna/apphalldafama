@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "HelveticaneueThin";
+	src: url("../_fontes/HelveticaneueThin.otf");
+}
+
+#carousel_container{
+	position: relative;
+    margin: 0 auto;
+    width: 800px;
+    overflow: hidden;
+}
+
+#carousel_inner {
+float:left; /* important for inline positioning */
+width:800px; /* important (this width = width of list item(including margin) * items shown */ 
+overflow: hidden;  /* important (hide the items outside the div) */
+/* non-important styling bellow */
+}
+
+#carousel_ul {
+position:relative;
+left:-450px; /* important (this should be negative number of list items width(including margin) */
+list-style-type: none; /* removing the default styling for unordered list items */
+margin: 0px;
+padding: 0px;
+width:9999px; /* important */
+/* non-important styling bellow */
+padding-bottom:10px;
+border: solid transparent;
+}
+
+#carousel_ul li{
+position: relative;
+float: left; /* important for inline positioning of the list items */                                    
+width:505px;  /* fixed width, important */
+/* just styling bellow*/
+padding:0px;
+height:330px;
+margin: 80px 30px 0px;
+}
+
+#carousel_ul li .titulo-video-carousel{
+	position: absolute;
+	font-family: "HelveticaneueThin", Arial, sans-serif;
+	font-weight: lighter;
+	font-size: 16pt;
+	color: white;
+	transform: translate(0px, -70px);
+	-webkit-transform: translate(0px, -70px);
+	-moz-transform: translate(0px, -70px);
+	-mz-transform: translate(0px, -70px);
+	-o-transform: translate(0px, -70px);
+}
+
+#carousel_ul li .titulo-video-carousel .titulo-enfase{
+	color: #b38f59;
+}
+
+#left_scroll{
+	position: absolute;
+	left: 115px;
+	top: 230px;
+	z-index: 50;
+}
+
+#right_scroll{
+	position: absolute;
+	right: 115px;
+	top: 230px;
+	z-index: 50;
+}
+
+#carousel_container #modal-esquerdo{
+	display: block;
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	left: 0px;
+	height: 100%;
+	width: 100px;
+	z-index: 30;
+	margin-top: 80px;
+}
+
+#carousel_container #modal-direito{
+	display: block;
+	position: absolute;
+	background-color: rgba(0,0,0,0);
+	right: 0px;
+	height: 100%;	
+	width: 100px;
+	z-index: 30;
+	margin-top: 80px;
+}
+
+#left_scroll img, #right_scroll img{
+	/*styling*/
+	cursor: pointer;
+	cursor: hand;
+}

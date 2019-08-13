@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "HelveticaneueThin";
+	src: url("../_fontes/HelveticaneueThin.otf");
+}
+
+@font-face {
+	font-family: "HelveticaneueBold";
+	src: url("../_fontes/HelveticaneueBold.otf");
+}
+
+body #popup-regulamento{
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 400px;
+	margin: 0px -250px;
+	width: 500px;
+	height: 500px;
+	background-color: #323232;
+	z-index: 550;
+	padding: 0px 40px;
+}
+
+body #popup-regulamento #fechar-popup-regulamento{
+	position: absolute;
+	right: 0px;
+	top: -20px;
+}
+
+body #popup-regulamento #titulo-regulamento{
+	text-align: center;
+}
+
+body #popup-regulamento #texto-regulamento{
+	font-family: "HelveticaneueThin", Arial, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: #fff;
+	text-align: left;
+}
+
+body #interface{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	width: 800px;
+	margin: 0px auto;
+}
+
+body #interface #modal{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 500;
+}
+
+body a,
+body a img{
+	border: none;
+	outline : none;
+}
+
+#interface #cabecalho{
+	height: 290px;
+	background-image: url(../_imagens/capa-hall-da-fama.png);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+
+#interface #corpo #principal{
+	padding-top: 71px;
+	position: relative;
+	height: 530px;
+	background-color: #333333;
+	background-image: url(../_imagens/titulo-liss-unlimited-expert.png), url(../_imagens/background-sessao-principal.png);
+	background-position: center top, center bottom;
+	background-repeat: no-repeat;
+}
+
+#interface #corpo #principal #video-titulo{
+	position: relative;
+	float: right;
+	top: 0px;
+	right: 0px;
+ 	width: 480px;
+ 	height: 100%;
+ 	margin: 0px;
+ 	padding: 0px;
+}
+
+#interface #corpo #principal #video-titulo #video{
+	position: relative;
+	float: right;
+	top: 34px;
+	right: 34px;
+	width: 446px;
+	height: 288px;
+	margin: 0px;
+	background-color: #fff;
+}
+
+#interface #corpo #principal #video-titulo #titulo{
+	display: block;
+	position: relative;
+	float: right;
+	top: -10px;
+	width: 350px;
+	text-align: right;
+	z-index: 20;
+	margin: 0px;
+
+}
+
+#interface #corpo #principal #video-titulo #titulo h1{
+	display: inline-block;
+	position: relative;
+	float: right;
+	top: 20px;
+	right: 5px;
+	color: #fff;
+	font-family: "HelveticaneueThin", Arial, sans-serif;
+	font-size: 14pt;
+	font-weight: lighter;
+	text-align: left;
+	line-height: 1;
+	margin-bottom: 35px;
+}
+
+#interface #corpo #principal #video-titulo #titulo h1 .destaque{
+	color: #b6925b;
+}
+
+#interface #corpo #principal #video-titulo #titulo #foto-titulo{
+	display: inline-block;
+	position: relative;
+	float: left;
+	top: 0px;
+	width: 130px;
+	height: 140px;
+	background-color: #fff;
+	vertical-align: baseline;
+}
+
+#interface #corpo #principal #video-titulo #titulo hr{
+	display: inline-block;
+	width: 340px;
+	margin-bottom: 10px;
+	background: #fff;
+}
+
+#interface #corpo #principal #video-titulo #abrir-popup-regulamento{
+	margin-right: 5px;
+}
+
+#interface #corpo #fique-por-dentro{
+	position: relative;
+	padding-top: 100px;
+	height: 450px;
+	background-color: #000;
+	background-image: url(../_imagens/titulo_fique-por-dentro.png);
+	background-position: center 35px;
+	background-repeat: no-repeat;
+}
+
+#interface #rodape{
+	height: 510px;
+	background-color: #000;
+	background-image: url(../_imagens/background-rodape.png);
+}
